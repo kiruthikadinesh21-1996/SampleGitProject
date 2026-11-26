@@ -1,0 +1,31 @@
+{
+  "name": "playwright_learning",
+  "version": "1.0.0",
+  "description": "Hands-on Playwright UI, API, browser context, and mobile examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project=mobile-chromium --project=mobile-webkit",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright test && playwright show-report",
+    "show-report": "playwright show-report",
+    "demo": "node test-support/server.js",
+    "codegen": "playwright codegen http://127.0.0.1:4173"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
